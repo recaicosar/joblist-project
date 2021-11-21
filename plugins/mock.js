@@ -19,6 +19,7 @@ export default ({ $img, $axios }) => {
     return regex
   }
 
+  /*
   jobList.result.jobList.items.filter(
     item =>
       (item.imageUrl = item.imageUrl
@@ -30,6 +31,7 @@ export default ({ $img, $axios }) => {
         })
         : null)
   )
+*/
 
   const getList = (req) => {
     const defaultParams = { page: 1, pageSize: 10 }

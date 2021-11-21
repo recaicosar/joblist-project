@@ -145,8 +145,6 @@ export default {
   .avatar {
     font-size: 1rem;
     display: inline-flex;
-    width: 48px;
-    height: 48px;
     color: #fff;
     border-radius: 0.375rem;
     background-color: #adb5bd;
@@ -155,6 +153,8 @@ export default {
 
     img {
       border-radius: 50% !important;
+    height: 74px;
+    width: 74px;
     }
   }
   .avatar-xl {

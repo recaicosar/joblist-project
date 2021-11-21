@@ -19,6 +19,10 @@ $ yarn generate
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
+## Demo
+
+https://joblist-project.recaicosar.com/
+
 ## Features
 
 Filtering by post title and location

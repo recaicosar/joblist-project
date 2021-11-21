@@ -2,7 +2,7 @@
   "name": "joblist-project",
   "version": "1.0.0",
   "author": "recaicosar",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

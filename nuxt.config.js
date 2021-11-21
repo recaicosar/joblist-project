@@ -1,4 +1,5 @@
-export default {
+/* eslint-disable */
+module.exports = {
   target: 'server',
   head: {
     title: 'İş ilanları',
@@ -23,7 +24,7 @@ export default {
       'upload-isinolsun-com.mncdn.com'
     ],
     alias: {
-      unsplash: 'https://upload-isinolsun-com.mncdn.com'
+      unsplash: 'upload'
     }
   },
   plugins: ['@/plugins/mock.js', { src: '@/plugins/infiniteloading', ssr: false }

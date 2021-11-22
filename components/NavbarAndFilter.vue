@@ -80,13 +80,13 @@ export default {
 <style lang="scss" scoped>
 div.filter {
   margin-bottom: 75px;
-}
-input {
-  border:0
-}
-.countItem {
-      color: #fff;
-    margin-left: 10px;
-    padding-top: 10px;
+    input {
+      border:0
+    }
+    .countItem {
+          color: #fff;
+        margin-left: 10px;
+        padding-top: 10px;
+    }
 }
 </style>

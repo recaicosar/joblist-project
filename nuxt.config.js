@@ -16,9 +16,6 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  css: [
-    '@/assets/styles/app.scss'
-  ],
   image: {
     domains: [
       'upload-isinolsun-com.mncdn.com'
@@ -37,14 +34,16 @@ module.exports = {
   ],
   modules: [
     'bootstrap-vue/nuxt',
+    '@nuxtjs/style-resources',
     '@nuxtjs/axios',
     '@nuxt/image'
   ],
   bootstrapVue: {
-  //   components: ['BContainer', 'BRow', 'BCol', 'BFormInput', 'BButton', 'BTable', 'BModal', 'BNavbar', 'BCollapse', 'BNavForm', 'BNavbarBrand', 'BNavbarToggle'],
-    bootstrapCSS: false,
-    bootstrapVueCSS: false,
-    icons: false
+    bootstrapCSS: true,
+    bootstrapVueCSS: true
+  },
+  styleResources: {
+    scss: '@/assets/styles/app.scss'
   },
   axios: {},
   build: {
@@ -63,6 +62,15 @@ module.exports = {
         removeComments: true,
         preserveLineBreaks: true,
         collapseWhitespace: true
+      }
+    },
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+        automaticNameDelimiter: '.',
+        name: 'test',
+        maxSize: 256000
       }
     },
     extend (config, ctx) {}
